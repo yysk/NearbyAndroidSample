@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:fitsSystemWindows="true"/>
+
+    <TextView
+        android:id="@+id/id_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/text_large"
+        android:padding="@dimen/spacing_medium"/>
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_send_button"
+        android:layout_below="@id/id_text_view"
+        android:textSize="@dimen/text_large"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/spacing_medium"/>
+
+</RelativeLayout>
