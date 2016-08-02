@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(yysk.langley.nearby_android.R.layout.activity_main);
+        setContentView(R.layout.activity_main);
         setupViews();
 
         mGoogleApiClient = new GoogleApiClient.Builder(getApplicationContext())
@@ -129,13 +129,13 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     }
 
     private void setupViews() {
-        Toolbar toolbar = (Toolbar) findViewById(yysk.langley.nearby_android.R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        TextView idTextView = (TextView) findViewById(yysk.langley.nearby_android.R.id.id_text_view);
+        TextView idTextView = (TextView) findViewById(R.id.id_text_view);
         idTextView.setText(NEARBY_ID);
 
-        Button sendButton = (Button) findViewById(yysk.langley.nearby_android.R.id.send_button);
+        Button sendButton = (Button) findViewById(R.id.send_button);
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
